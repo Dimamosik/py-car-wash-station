@@ -5,11 +5,11 @@ class Car:
     def __init__(
         self,
         comfort_class: int,
-        clean_mark: float,
+        clean_mark: int,
         brand: str,
     ) -> None:
         self.comfort_class: int = comfort_class
-        self.clean_mark: float = clean_mark
+        self.clean_mark: int = clean_mark
         self.brand: str = brand
 
 
@@ -17,7 +17,7 @@ class CarWashStation:
     def __init__(
         self,
         distance_from_city_center: float,
-        clean_power: float,
+        clean_power: int,
         average_rating: float,
         count_of_ratings: int,
     ) -> None:
@@ -25,7 +25,7 @@ class CarWashStation:
             raise ValueError("distance_from_city_center must be > 0")
 
         self.distance_from_city_center: float = distance_from_city_center
-        self.clean_power: float = clean_power
+        self.clean_power: int = clean_power
         self.average_rating: float = average_rating
         self.count_of_ratings: int = count_of_ratings
 
